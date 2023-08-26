@@ -1,0 +1,14 @@
+<h3>Title: 
+  <%= event.title %>
+</h3>
+<p>
+  <strong>Details: </strong>
+  <%= event.description %>
+</p>
+<p>
+  <strong>Location: </strong>
+  <%= event.event_location %>
+</p>
+<p style="color: orange; ">
+  <%= event.event_datetime.to_fs(:custom) %>
+</p>

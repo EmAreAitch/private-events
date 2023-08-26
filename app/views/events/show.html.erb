@@ -1,0 +1,5 @@
+<%= render @event %>
+
+<p><%= link_to "Edit event", edit_event_path(@event)%></p>
+<p><%= link_to "Destroy event", @event, method: :delete, data: { turbo_method: :delete } %></p>
+<p><%= link_to "Back to all events", events_path %></p>

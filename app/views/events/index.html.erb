@@ -1,0 +1,12 @@
+<h1>Welcome to Private Events</h1>
+
+<p>"Discover exclusive event experiences with us at Private-Events.com . Elevate your private occasions with our handpicked venues, personalized themes, and expert planning assistance. Your event, our expertise."</p>
+
+<% @events.each do |event| %>
+  <div style = "border: 2px solid green; padding: 10px" >
+    <%= render event %>
+    <p><%= link_to "More details", event %></p>
+  </div>
+<% end %>
+
+<p><%= link_to "Create a event", new_event_path %></p>
